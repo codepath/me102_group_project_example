@@ -121,7 +121,7 @@ Optional:
    - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
-#### [OPTIONAL:] List endpoints if using existing API such as Yelp
+#### [OPTIONAL:] Existing API Endpoints
 ##### An API Of Ice And Fire
 - Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
 
