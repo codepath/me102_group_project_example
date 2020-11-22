@@ -121,26 +121,23 @@ Optional:
    - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
-#### [OPTIONAL:] Existing API Endpoints
-##### An API Of Ice And Fire
-- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
+#### Existing API Endpoints
+
+
+##### Amazon Web Servives API for Products
+- Base URL - [webservices.amazon.com](webservices.amazon.com)
 
    HTTP Verb | Endpoint | Description
    ----------|----------|------------
-    `GET`    | /characters | get all characters
-    `GET`    | /characters/?name=name | return specific character by name
-    `GET`    | /houses   | get all houses
-    `GET`    | /houses/?name=name | return specific house by name
+    `GET`    | /BrowseNodeInfo.BrowseNodes | Get the browse nodes associated with the item. Using this resource only will return Id, DisplayName, ContextFreeName and IsRoot information associated with each browse node.
+    `GET`    | /BrowseNodeInfo.BrowseNodes.SalesRank | Get the SalesRank information with each of the browse nodes the item falls under. 
+    `GET`    | /Images.Primary.[Small/Medium/Large]   | Returns sized primary image for each item.
+    `GET`    | /ItemInfo.ByLineInfo | Returns set of attributes that specifies basic information of the item.
+    `GET`    | /ItemInfo.Classifications | Returns set of attributes that are used to classify an item into a particular category 
+    `GET`    | /ItemInfo.ContentInfo   | Returns set of attributes that are specific to the content like Books, Movies, etc.
+    `GET`    | /ItemInfo.ProductInfo| Returns set of attributes that describe non-technical aspects of an item.
+    `GET`    | /ItemInfo.Title | Returns the title of the product. 
+    `GET`    | /Offers.Listings.Availability.Message | Returns Availability message of the product.
+    `GET`    | /Offers.Listings.DeliveryInfo.IsPrimeEligible | Returns whether an offer for the product is prime eligible.
+    `GET`    | /Offers.Listings.Price| Returns offer buying price of a product.
 
-##### Game of Thrones API
-- Base URL - [https://api.got.show/api](https://api.got.show/api)
-
-   HTTP Verb | Endpoint | Description
-   ----------|----------|------------
-    `GET`    | /cities | gets all cities
-    `GET`    | /cities/byId/:id | gets specific city by :id
-    `GET`    | /continents | gets all continents
-    `GET`    | /continents/byId/:id | gets specific continent by :id
-    `GET`    | /regions | gets all regions
-    `GET`    | /regions/byId/:id | gets specific region by :id
-    `GET`    | /characters/paths/:name | gets a character's path with a given name
